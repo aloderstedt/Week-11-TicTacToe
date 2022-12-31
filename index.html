@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        img {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: auto;
+}
+        .container{
+	width: 330px;
+	overflow: hidden;
+	margin: 50px auto 0 auto;
+}
+
+.container span{
+	display: block;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 40px;
+	margin-bottom: 20%;
+}
+
+.container .box{
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid white;
+	transition: all .25s ease-in-out;
+	font-size: 85px;
+	text-align: center;
+	line-height: 100px; 
+	cursor: pointer;
+  }
+
+.container .box:hover{
+	background: rgb(199, 199, 199);
+	color: rgb(108, 108, 108);
+}
+
+.btn{
+	width: 65px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 15px;
+	display: block;
+	margin: 40px auto;
+}
+
+.win{
+	background: #3b3b3b; 
+	color: rgb(167, 167, 167);
+}
+    </style>
+</head>
+<body class="bg-dark">
+    
+<div class="container" id="main">
+    <span class="alert alert-success" id="turn">Tic Tac Toe</span>
+    <div class="box" style="border-left: 0; border-top:0" id="box1"></div>
+    <div class="box" style="border-top: 0;" id="box2"></div>
+    <div class="box" style="border-top: 0; border-right: 0;" id="box3"></div>
+    <div class="box" style="border-left: 0;" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" style="border-right: 0;" id="box6"></div>
+    <div class="box" style="border-left: 0; border-bottom: 0;" id="box7"></div>
+    <div class="box" style="border-bottom: 0;" id="box8"></div>
+    <div class="box" style="border-bottom: 0; border-right: 0;" id="box9"></div>
+</div>
+
+<button class="btn btn-rounded btn-success" id="replay">Play Again</button>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
